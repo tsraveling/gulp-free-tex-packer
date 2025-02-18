@@ -1,5 +1,5 @@
 {
-  "name": "gulp-free-tex-packer",
+  "name": "@tsraveling/gulp-free-tex-packer",
   "displayName": "Gulp free texture packer",
   "version": "0.5.4",
   "description": "Gulp texture packer",
