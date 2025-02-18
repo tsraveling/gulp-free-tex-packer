@@ -20,14 +20,14 @@
     "sprite",
     "2d"
   ],
-  "author": "Alexander Norinchak",
+  "author": "Alexander Norinchak (modified by Tim Raveling)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odrick/gulp-free-tex-packer"
+    "url": "git+https://github.com/tsraveling/gulp-free-tex-packer"
   },
   "license": "MIT",
   "dependencies": {
-    "free-tex-packer-core": "^0.3.4",
+    "@tsraveling/free-tex-packer-core": "^0.3.4",
     "plugin-error": "^1.0.1",
     "through2": "^2.0.3"
   }
