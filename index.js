@@ -56,6 +56,7 @@ module.exports = function(options) {
     }
 
     if (!options) options = {};
+    console.log(">>> options:", options)
     options.appInfo = appInfo;
 
     let folderStructure = {}
@@ -76,9 +77,10 @@ module.exports = function(options) {
     // STUB: Set it up so that each folder outputs to its own spritesheet
 
     Object.keys(folderStructure).forEach(path => {
+      const folderName = path.split("/").pop()
       console.log(">>> processing", path)
       const folderFiles = folderStructure[path]
-      texturePacker(folderFiles, options, (files, error) => {
+      texturePacker(folderFiles, { ...options, textureName: folderName }, (files, error) => {
         if (error) {
           cb(getError(error.message || error.description || "Unknown error"));
           return;
