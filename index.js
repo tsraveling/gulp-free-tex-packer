@@ -39,7 +39,11 @@ module.exports = function(options) {
       return;
     }
 
-    files.push({ path: fixPath(file.base + '/' + file.relative), contents: file.contents });
+    files.push({
+      path: fixPath(file.base + '/' + file.relative),
+      relative: file.relative,
+      contents: file.contents
+    });
 
     cb();
   }
