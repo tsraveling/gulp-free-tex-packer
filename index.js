@@ -1,7 +1,6 @@
 let through = require("through2");
 let path = require("path");
-let PluginError = require("plugin-error");
-let texturePacker = require("free-tex-packer-core");
+let texturePacker = require("@tsraveling/free-tex-packer-core");
 let appInfo = require("./package.json");
 
 function fixPath(path) {
@@ -40,7 +39,7 @@ module.exports = function(options) {
       return;
     }
 
-    files.push({ path: fixPath(file.base + '/' + file.relative) });
+    files.push({ path: fixPath(file.base + '/' + file.relative), contents: file.contents });
 
     cb();
   }
