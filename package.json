@@ -26,9 +26,8 @@
     "url": "git+https://github.com/tsraveling/gulp-free-tex-packer"
   },
   "license": "MIT",
-  "//": "^0.3.4",
   "dependencies": {
-    "@tsraveling/free-tex-packer-core": "file:~/repos/free-tex-packer-core",
+    "@tsraveling/free-tex-packer-core": "^0.3.5"
     "plugin-error": "^1.0.1",
     "through2": "^2.0.3"
   }
