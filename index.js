@@ -1,6 +1,7 @@
 let through = require("through2");
 let path = require("path");
 let texturePacker = require("@tsraveling/free-tex-packer-core");
+let PluginError = require('plugin-error')
 let appInfo = require("./package.json");
 
 function fixPath(path) {
